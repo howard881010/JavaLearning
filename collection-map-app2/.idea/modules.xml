@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Movie-buy-app/Movie-buy-app.iml" filepath="$PROJECT_DIR$/../Movie-buy-app/Movie-buy-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Stream-exception-log-app/Stream-exception-log-app.iml" filepath="$PROJECT_DIR$/../Stream-exception-log-app/Stream-exception-log-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Unchange_Collection/Unchange_Collection.iml" filepath="$PROJECT_DIR$/../Unchange_Collection/Unchange_Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-map-app2.iml" filepath="$PROJECT_DIR$/collection-map-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../logBack-app/logBack-app.iml" filepath="$PROJECT_DIR$/../logBack-app/logBack-app.iml" />
+    </modules>
+  </component>
+</project>

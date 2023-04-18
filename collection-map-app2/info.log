@@ -1,0 +1,4 @@
+2023-04-12 15:02:49,353 [main] INFO  Test.class 15 - 我開始記錄第二行
+2023-04-12 15:02:49,359 [main] ERROR Test.class 22 - 功能出現異常java.lang.ArithmeticException: / by zero
+2023-04-12 15:02:57,336 [main] INFO  Test.class 15 - 我開始記錄第二行
+2023-04-12 15:02:57,343 [main] ERROR Test.class 22 - 功能出現異常java.lang.ArithmeticException: / by zero

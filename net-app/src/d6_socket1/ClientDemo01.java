@@ -1,0 +1,35 @@
+package d6_socket1;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.net.Socket;
+
+/*
+    完成Socket網路編程客戶端發送
+ */
+public class ClientDemo01 {
+    public static void main(String[] args) {
+        try {
+
+            // 1. 創建socket管道，請求服務端的連接
+            // 服務器ip地址，服務端端口
+            Socket socket = new Socket("192.168.168.87", 7777);
+            // 2. 從SOCKET通信管道中得到一個字節輸出流 負責發送數據
+            OutputStream os = socket.getOutputStream();
+            // 3. 把低級的字節流包裝程打印流
+            PrintStream ps = new PrintStream(os);
+            // 4.發送消息
+            ps.println("我是TCP客戶端，發出邀請");
+            ps.flush();
+            // 不要去關
+            //ps.flush();
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+}

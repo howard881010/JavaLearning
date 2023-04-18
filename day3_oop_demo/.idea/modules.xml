@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../api-lambda-app/api-lambda-app.iml" filepath="$PROJECT_DIR$/../api-lambda-app/api-lambda-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../collection-app/collection-app.iml" filepath="$PROJECT_DIR$/../collection-app/collection-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../collection-map-app2/collection-map-app2.iml" filepath="$PROJECT_DIR$/../collection-map-app2/collection-map-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day3_oop_demo.iml" filepath="$PROJECT_DIR$/day3_oop_demo.iml" />
+    </modules>
+  </component>
+</project>

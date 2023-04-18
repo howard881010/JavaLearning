@@ -1,0 +1,4 @@
+INFO  [main] 2023-04-12 14:31:23,338 Test.java:15 - 我開始記錄第二行
+ERROR [main] 2023-04-12 14:31:23,343 Test.java:22 - 功能出現異常java.lang.ArithmeticException: / by zero
+INFO  [main] 2023-04-12 14:48:52,221 Test.java:15 - 我開始記錄第二行
+ERROR [main] 2023-04-12 14:48:52,224 Test.java:22 - 功能出現異常java.lang.ArithmeticException: / by zero

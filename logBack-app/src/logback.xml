@@ -1,0 +1,53 @@
+<configuration scan="true">
+
+    <!--定義日誌檔案的儲存地址 勿在 LogBack 的配置中使用相對路徑-->
+    <property name="CATALINA_BASE" value="**/logs"></property>
+
+    <!-- 控制檯輸出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <!-- 輸出日誌記錄格式 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 第一個檔案輸出,每天產生一個檔案 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 輸出檔案路徑+檔名 -->
+            <fileNamePattern>${D:\code\logback}/aa.%d{yyyyMMdd}.log</fileNamePattern>
+            <!-- 儲存30天的日誌 -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <!-- 輸出日誌記錄格式 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="CUSTOM" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${CATALINA_BASE}/custom.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${CATALINA_BASE}/custom.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 設定日誌輸出級別 -->
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <logger name="file" level="DEBUG">
+        <appender-ref ref="FILE1" />
+    </logger>
+    <!-- 自定義logger -->
+    <logger name="custom" level="INFO">
+        <appender-ref ref="CUSTOM" />
+    </logger>
+</configuration>

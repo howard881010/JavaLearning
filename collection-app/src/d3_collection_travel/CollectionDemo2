@@ -1,0 +1,25 @@
+package d3_collection_travel;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class CollectionDemo02 {
+    public static void main(String[] args) {
+        Collection<String> lists = new ArrayList<>();
+        lists.add("aaa");
+        lists.add("bb");
+        lists.add("cc");
+        lists.add("ddd");
+        lists.add("eee");
+
+        for(String ele:lists){
+            System.out.println(ele);
+        }
+
+        double[] scores = {100, 50.6, 99};
+
+        for (double score : scores) {
+            System.out.println(score);
+        }
+    }
+}
