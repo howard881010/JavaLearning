@@ -1,0 +1,10 @@
+=====Student=====
+name=豬八戒
+sex=男
+age=10000
+className=西天跑路1班
+hobby=吃、睡
+=====Teacher=====
+name=播妞
+sex=女
+salary=10000.0
